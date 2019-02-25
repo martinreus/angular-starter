@@ -10,6 +10,10 @@ const routes: Routes = [
       {
         path: 'aplicacoes',
         loadChildren: 'src/app/modules/applications/applications.module#ApplicationsModule'
+      },
+      {
+        path: 'servidores',
+        loadChildren: 'src/app/modules/servers/servers.module#ServersModule'
       }
     ]
   }
