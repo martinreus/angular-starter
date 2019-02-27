@@ -24,7 +24,7 @@ export class ServerListComponent implements AfterViewInit {
   constructor(private serverService: ServersService) {}
 
   ngAfterViewInit() {
-    this.serverList$ = this.serverService.getList();
+    // this.serverList$ = this.serverService.getList();
     // If the user changes the sort order, reset back to the first page.
     this.sort.sortChange.subscribe(() => (this.paginator.pageIndex = 0));
 
